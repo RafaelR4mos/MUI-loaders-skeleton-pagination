@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 import { UsersResponse } from "../../utils/interfaces";
 import { toast } from "react-toastify";
-import {
-  Breadcrumbs,
-  Stack,
-  Typography,
-  Skeleton,
-  Pagination,
-} from "@mui/material";
+import { Breadcrumbs, Typography, Skeleton, Pagination } from "@mui/material";
 import { Link } from "react-router-dom";
 import { UserCardSkeleton } from "../../components/UserCard/UserCardSkeleton";
 import { UserCard } from "../../components/UserCard";
@@ -19,7 +13,7 @@ export function PaginationContent() {
   const [isLoading, setIsLoading] = useState(true);
   const [page, setPage] = useState(1);
 
-  const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
+  const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
     setUserList(null);
   };
