@@ -1,0 +1,9 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8dvh;
+
+  padding: 1rem;
+  background-color: var(--light-blue);
+}
