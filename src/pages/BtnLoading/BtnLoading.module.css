@@ -4,7 +4,3 @@
   gap: 1rem;
   padding: 3rem 3rem 1.5rem;
 }
-
-.breadcumbLink:hover {
-  border-bottom: 1px solid gray;
-}

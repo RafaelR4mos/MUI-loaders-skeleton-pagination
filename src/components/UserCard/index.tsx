@@ -4,12 +4,14 @@ import {
   CardContent,
   Button,
   Typography,
+  Box,
+  Avatar,
 } from "@mui/material";
-import { userType } from "../../utils/interfaces";
+import { UserType } from "../../utils/interfaces";
 import { useNavigate } from "react-router-dom";
 
 interface UserCardTypes {
-  userInfo: userType;
+  userInfo: UserType;
 }
 
 export function UserCard({ userInfo }: UserCardTypes) {
@@ -18,16 +20,25 @@ export function UserCard({ userInfo }: UserCardTypes) {
   return (
     <Card variant="outlined">
       <CardContent>
-        <Typography variant="h5" component="strong">
-          {userInfo.name}
-        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Typography variant="h5" component="strong">
+            {userInfo.last_name}
+          </Typography>
+
+          <Avatar
+            alt={`${userInfo.first_name} ${userInfo.last_name}`}
+            src={userInfo.avatar}
+          />
+        </Box>
 
         <Typography color="text.secondary" component="div">
           Email: {userInfo.email}
-        </Typography>
-
-        <Typography color="text.secondary" component="div">
-          Username: {userInfo.username}
         </Typography>
       </CardContent>
       <CardActions>

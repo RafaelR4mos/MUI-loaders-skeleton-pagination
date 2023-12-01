@@ -1,14 +1,21 @@
-export interface postType {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
+export interface UsersResponse {
+  page: number;
+  per_page: number;
+  total: number;
+  total_pages: number;
+  data: UserType[];
+  support: SupportType;
 }
 
-export interface userType {
+export interface UserType {
   id: number;
-  name: string;
-  username: string;
   email: string;
-  address: unknown;
+  first_name: string;
+  last_name: string;
+  avatar: string;
+}
+
+export interface SupportType {
+  url: string;
+  text: string;
 }

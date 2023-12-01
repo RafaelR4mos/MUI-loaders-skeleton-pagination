@@ -42,31 +42,11 @@ export function Home() {
             <p>
               Usado para indicar está ocorrendo um estado de carregamento de
               conteúdos. O estado de carregamento é representado pela rotação de
-              um círculo animado
+              um círculo animado ou uma barra horizontal neste exemplo.
             </p>
           </CardContent>
 
           <CardActions onClick={() => navigate("simple-loading")}>
-            <Button endIcon={<ArrowRightIcon />}>Confira o exemplo</Button>
-          </CardActions>
-        </Card>
-
-        <Card variant="outlined">
-          <CardContent>
-            <Typography variant="h5" component="strong">
-              Linear loading/Progress Bar
-            </Typography>
-
-            <p>
-              Usado para indicar está ocorrendo um estado de carregamento de
-              conteúdos. O estado de carregamento é representado por uma prévia
-              linha vertical que pode ter uma animação infinita ou até mesmo
-              representando o status ou porcentagem atual da requisição para ser
-              concluída.
-            </p>
-          </CardContent>
-
-          <CardActions onClick={() => navigate("linear-loading")}>
             <Button endIcon={<ArrowRightIcon />}>Confira o exemplo</Button>
           </CardActions>
         </Card>

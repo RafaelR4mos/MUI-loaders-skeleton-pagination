@@ -51,7 +51,7 @@ export function BtnLoading() {
   return (
     <>
       <Breadcrumbs>
-        <Link to="/" className={styles.breadcumbLink}>
+        <Link to="/" className="breadcrumbLink">
           Início
         </Link>
         <Typography fontWeight={700}>BtnLoading</Typography>
@@ -59,10 +59,15 @@ export function BtnLoading() {
       <Typography
         variant="h3"
         component="h1"
-        sx={{ color: "var(--black)", textAlign: "center" }}
+        sx={{
+          color: "var(--black)",
+          textAlign: "center",
+          marginTop: "1.5rem",
+        }}
       >
         Btn Loading
       </Typography>
+
       <Card
         sx={{
           position: "absolute",

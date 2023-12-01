@@ -27,12 +27,11 @@ export function Header() {
         >
           <Button onClick={() => navigate("btn-loading")}>Btn Loading</Button>
           <Button onClick={() => navigate("simple-loading")}>
-            Simple loading
+            Simple loadings
           </Button>
-          <Button onClick={() => navigate("linear-loading")}>
-            Linear loading
+          <Button onClick={() => navigate("skeleton-loading")}>
+            Skeleton Loading
           </Button>
-          <Button onClick={() => navigate("skeleton-loading")}>Skeleton</Button>
           <Button onClick={() => navigate("pagination")}>Pagination</Button>
         </ButtonGroup>
       </nav>
