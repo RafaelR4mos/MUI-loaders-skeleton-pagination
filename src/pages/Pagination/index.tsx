@@ -52,14 +52,14 @@ export function PaginationContent() {
         <Link to="/" className="breadcrumbLink">
           Início
         </Link>
-        <Typography fontWeight={700}>Skeleton Loading</Typography>
+        <Typography fontWeight={700}>Pagination</Typography>
       </Breadcrumbs>
       <Typography
         variant="h3"
         component="h1"
         sx={{ color: "var(--black)", textAlign: "center", marginTop: "1.5rem" }}
       >
-        Skeleton Content Loading
+        Pagination
       </Typography>
       <div className={styles.usersContainer}>
         {userList?.data
